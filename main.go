@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	. "github.com/CarlosRA97/OpenServerReceiver/worker"
+	. "github.com/CarlosRA97/OpenServerRetriever/worker"
 	"io/ioutil"
 	"log"
 	"net/http"
