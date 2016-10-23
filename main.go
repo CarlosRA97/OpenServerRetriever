@@ -3,25 +3,24 @@ package main
 import (
 	"fmt"
 	. "github.com/CarlosRA97/OpenServerRetriever/worker"
-	"io/ioutil"
 	"log"
 	"net/http"
 )
 
-func init() {
-	fmt.Println(Configure())
-	listDir, err := ioutil.ReadDir("images")
-	Check(err)
-	listDir = listDir[1:]
-	for file := range listDir {
-		ImageUploader(fmt.Sprintf("images/%s", listDir[file].Name()))
-	}
-	//ImageUploader("Go-aviator.png")
-}
+//func init() {
+//	fmt.Println(Configure())
+//	listDir, err := ioutil.ReadDir("images")
+//	Check(err)
+//	listDir = listDir[1:]
+//	for file := range listDir {
+//		ImageUploader(fmt.Sprintf("images/%s", listDir[file].Name()))
+//	}
+//	//ImageUploader("Go-aviator.png")
+//}
 
 func main() {
 
-	http.HandleFunc("/", Index)
+	//http.HandleFunc("/", Index)
 
 	http.HandleFunc("/update", UpdateMapsOnServer)
 	http.HandleFunc("/update-map", ChangeMap)
