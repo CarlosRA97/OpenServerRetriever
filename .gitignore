@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
-config.toml
 server.properties
 pMod.py
 config.json
+users.json
 images/

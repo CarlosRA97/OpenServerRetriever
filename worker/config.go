@@ -6,8 +6,9 @@ import (
 )
 
 type Server struct {
-	Ip   string `json:"ip"`
-	Port string `json:"port"`
+	Ip     string `json:"ip"`
+	Port   string `json:"port"`
+	ApiKey string `json:"api_key"`
 }
 
 type Rest struct {

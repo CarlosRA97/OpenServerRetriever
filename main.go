@@ -20,8 +20,8 @@ import (
 
 func main() {
 
-	//http.HandleFunc("/", Index)
-
+	http.HandleFunc("/", Index)
+	http.HandleFunc("/register", Register)
 	http.HandleFunc("/update", UpdateMapsOnServer)
 	http.HandleFunc("/update-map", ChangeMap)
 	http.HandleFunc("/server-state", State)
